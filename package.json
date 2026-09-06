@@ -1,0 +1,44 @@
+{
+  "name": "dsh-plugin-telegram",
+  "version": "0.1.1",
+  "description": "Control DeepSeek Harness from your phone via Telegram: start/continue sessions, watch live progress, answer approval requests and user questions, all from the Telegram chat.",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "telegram",
+    "bot",
+    "remote-control",
+    "mobile"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdforever/dsh-plugin-telegram.git"
+  },
+  "homepage": "https://github.com/zdforever/dsh-plugin-telegram#readme",
+  "bugs": {
+    "url": "https://github.com/zdforever/dsh-plugin-telegram/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "author": "zdforever",
+  "license": "MIT"
+}

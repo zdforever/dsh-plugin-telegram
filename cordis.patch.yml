@@ -1,0 +1,39 @@
+# dsh-plugin-telegram bundle declaration: insert the Telegram bridge plugin
+# entry into the host composite's loader config.
+#
+# NOTE: the entry's `config` below is what the loader passes to the plugin at
+# boot (settings.yaml is applied later at runtime, not at load).
+#
+# SECURITY: keep your real bot token OUT of this file — it is published on
+# GitHub. Either leave `token` empty and set the DSH_TELEGRAM_TOKEN
+# environment variable for the DSH Desktop process, or fill `token` in the
+# INSTALLED copy only (after install, edit
+# <profile>/node_modules/dsh-plugin-telegram/cordis.patch.yml locally and
+# never commit it). See README.md for details.
+- insert:
+    - id: dsh-plugin-telegram
+      name: dsh-plugin-telegram
+      config:
+        token: ""
+        tokenEnv: DSH_TELEGRAM_TOKEN
+        apiBaseUrl: https://api.telegram.org
+        proxyUrl: ""
+        allowedChats: []
+        autoAuthorize: true
+        workspace: ""
+        agentPreset: default
+        permissionPreset: workspace-write
+        modelProvider: ""
+        modelId: ""
+        notifyUserMessages: true
+        notifyAssistantMessages: true
+        notifyToolCalls: false
+        notifyTurnSummary: true
+        notifyTodos: true
+        forwardApprovals: true
+        forwardQuestions: true
+        approvalTimeoutSeconds: 300
+        questionTimeoutSeconds: 600
+        maxMessageLength: 3800
+        pollTimeoutSeconds: 50
+        listMax: 8
