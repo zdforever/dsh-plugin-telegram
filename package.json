@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-telegram",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Control DeepSeek Harness from your phone via Telegram: start/continue sessions, watch live progress, answer approval requests and user questions, all from the Telegram chat.",
   "type": "module",
   "main": "lib/index.js",
