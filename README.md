@@ -114,6 +114,10 @@ dsh plugin --profile desktop remove dsh-plugin-telegram
 
 （`dsh` CLI 会同步把它从 `dsh.profile.bundles` 移除；手动安装的话从 `package.json` 的 bundles 里删掉该行。）重启宿主生效。
 
+## Changelog / 更新记录
+
+见 [CHANGELOG.md](CHANGELOG.md)。
+
 ## License
 
 [MIT](./LICENSE)
